@@ -1,0 +1,32 @@
+# Criar arquivo .gitignore
+cat > .gitignore << EOF
+# Ambiente Virtual
+venv/
+env/
+ENV/
+
+# Arquivos Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Arquivos de dados grandes (opcional)
+*.csv
+*.xlsx
+*.json
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+EOF
